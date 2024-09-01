@@ -11,16 +11,14 @@ export function Stars({count} :{count :number}):React.JSX.Element {
   }
 
   return (
-    <>
-      <ul className="card-body-stars u-clearfix">
-        {starList.map((item :React.JSX.Element) => {
-          return (
-            <>
-              <li>{item}</li>
-            </>
-          )
-        })}
-      </ul>
-    </>
+    <ul className="card-body-stars u-clearfix">
+      {starList.map((item: React.JSX.Element) => {
+        return (
+          <>
+            <li>{item}</li>
+          </>
+        )
+      })}
+    </ul>
   )
 }
